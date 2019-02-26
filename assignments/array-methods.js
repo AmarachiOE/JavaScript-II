@@ -528,7 +528,16 @@ console.log(ticketPriceTotal);
 // ==== Challenge 5: Be Creative ====
 // Now that you have used .forEach(), .map(), .filter(), and .reduce().  I want you to think of potential problems you could solve given the data set and the 5k fun run theme.  Try to create and then solve 3 unique problems using one or many of the array methods listed above.
 
-// Problem 1
+// Problem 1: Create an array of businesses whose donations were more than the average amount (7043/50 = 140.86)
+
+let bigDonors = [];
+bigDonors.push (
+    runners.filter(currentValue => {
+        return currentValue.donation >= ticketPriceTotal/runners.length;
+    })
+);
+
+console.log(bigDonors);
 
 // Problem 2
 
