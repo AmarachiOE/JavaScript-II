@@ -1,6 +1,32 @@
 // ==== Challenge 1: Write your own closure ====
 // Write a simple closure of your own creation.  Keep it simple!
 
+function Africa() {
+  const popAfrica = "1.2 billion";
+  const message = "My population size is ";
+  console.log(`I am Africa. ${message} ${popAfrica} people!`);
+  //debugger;
+  
+  function Nigeria() {
+    const popNigeria = "190.9 million";
+    const statesNigeria = 36;
+    console.log(`I am Nigeria. ${message} ${popNigeria} people!`);
+    //debugger;
+
+      function Lagos() {
+        const popLagos = "17.5 million";
+        console.log(`I am Lagos. ${message} ${popLagos} people! I am among the ${statesNigeria} states in Nigeria.`)
+        //debugger;
+      }
+
+      Lagos();
+  }
+
+  Nigeria();
+}
+
+Africa();
+
 
 /* STRETCH PROBLEMS, Do not attempt until you have completed all previous tasks for today's project files */
 
