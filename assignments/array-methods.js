@@ -59,13 +59,18 @@ let fullName = [];
 
 runners.forEach (currentValue => {
     fullName.push({'first name': currentValue.first_name, 'last name': currentValue.last_name});
-}); // created objects in the array using {}
+}); // created objects in the array using {} and key names, otherwise, remove to just create an array.
 
 console.log(fullName);
 
 // ==== Challenge 2: Use .map() ====
 // The event director needs to have all the runner's first names converted to uppercase because the director BECAME DRUNK WITH POWER. Convert each first name into all caps and log the result
 let allCaps = [];
+
+runners.map (currentValue => {
+    allCaps.push(currentValue.first_name.toUpperCase());
+});
+
 console.log(allCaps); 
 
 // ==== Challenge 3: Use .filter() ====
